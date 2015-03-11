@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'bundler/setup'
+
+require_relative '../lib/portal_runner'
+require_relative '../lib/portal_event_worker'
+
+r = PortalRunner.new(PortalEventWorker)
+r.run
