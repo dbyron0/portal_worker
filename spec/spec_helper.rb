@@ -27,8 +27,11 @@ RSpec.configure do |config|
   #
   # Configure RSpec to capture log messages for each test. The output from the
   # logs will be stored in the @log_output variable. It is a StringIO instance.
-  include RSpec::LoggingHelper
-  config.capture_log_messages
+  #
+  # Disable this because it prevents at least some test code from logging.
+  #
+  # include RSpec::LoggingHelper
+  # config.capture_log_messages
 
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
